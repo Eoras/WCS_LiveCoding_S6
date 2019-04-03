@@ -1,0 +1,7 @@
+<?php
+
+// BLABLABLA
+$bddName = "";
+$bddUser = "";
+$bddPassword = "";
+$server = "";

@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/../../src/conf/connect.php';
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
