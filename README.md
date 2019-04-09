@@ -6,9 +6,12 @@
     - Replace `<USER>` and `<DATABASE_NAME>` with yours
 - Copy `private.php.dist` and write your configuration to connect to the database
     - `cp src/conf/private.php.dist src/conf/private.php`
-- Open it with PHPStorm
+- Open this project with **PHPStorm**
+- Add your information on private.php
+- You can see composer.json ? Install composer than
+    - `composer install`
+    - If you updated this project and if you have error like: "Not found this class etc..." run again this command to update your local
 - Start Php Server with the command:
     - `php -S localhost:8000 -t public/`
-    
     
 Thanks

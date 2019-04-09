@@ -1,0 +1,21 @@
+{
+    "name": "pauldossantos/wcs_live-coding_s6_php",
+    "authors": [
+        {
+            "name": "Paul DOS SANTOS",
+            "email": "eoras@outlook.fr"
+        }
+    ],
+    "require": {
+        "ehime/hello-world": "^1.0"
+    },
+    "require-dev": {
+    },
+
+    "autoload": {
+        "psr-4": {
+            "WCS\\App\\": "src/",
+            "WCS\\Person\\": "src/Entity/Person"
+        }
+    }
+}

@@ -1,5 +1,6 @@
 <?php
 
+namespace WCS\App\Entity;
 
 class Person
 {

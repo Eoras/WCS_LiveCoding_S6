@@ -1,6 +1,5 @@
 <?php
 
-// BLABLABLA
 $bddName = "";
 $bddUser = "";
 $bddPassword = "";

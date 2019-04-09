@@ -26,8 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && !empty($_POST)) {
         $errors['phone_number'] = "The phone number must be in French format";
     }
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = "L'adresse e-mail n'est pas valide !";
+        $errors['email'] = "Email isn't valid !";
     }
+
     if (!$errors) {
         if ($edit) {
             $query = "UPDATE person
