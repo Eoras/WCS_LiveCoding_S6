@@ -1,18 +1,13 @@
 <?php
 
-namespace WCS\App\Entity;
+namespace App\Entity;
 
 class Person
 {
 
-    const TYPE = "Humain";
-
     private $firstName;
-
     private $lastName;
-
     private $email;
-
     private $phoneNumber;
 
     /**
@@ -88,5 +83,14 @@ class Person
     {
         $this->phoneNumber = $phoneNumber;
     }
+
+    /**
+     * @return string
+     */
+    public function getFullName(): string
+    {
+        return $this->getFirstName() . " " . $this->getLastName();
+    }
+
 
 }

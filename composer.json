@@ -7,15 +7,15 @@
         }
     ],
     "require": {
-        "ehime/hello-world": "^1.0"
+        "ehime/hello-world": "^1.0",
+        "twig/twig": "^2.7"
     },
     "require-dev": {
     },
 
     "autoload": {
         "psr-4": {
-            "WCS\\App\\": "src/",
-            "WCS\\Person\\": "src/Entity/Person"
+            "App\\": "src/"
         }
     }
 }

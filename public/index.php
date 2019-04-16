@@ -1,11 +1,20 @@
 <?php
-require_once 'inc/_header.php';
 
-if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['personToDelete']) && !empty($_POST['personToDelete'])) {
-    $query = "DELETE FROM person WHERE id = " . $_POST['personToDelete'];
-    $request = $pdo->query($query);
-    $request->execute();
+use \App\Controller\HomeController;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+if($_GET && $_GET['r'] && !empty($_GET['r'])) {
+    if($_GET['r'] === "home") {
+
+        $controller = new HomeController();
+        echo $controller->showHomePage();
+
+    } else {
+        header("Location: ?r=home");
+        exit();
+    }
+} else {
+    header("Location: ?r=home");
+    exit();
 }
-
-include "inc/_showAll.php";
-include 'inc/_footer.php';
